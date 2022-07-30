@@ -54,11 +54,13 @@ let g:javascript_plugin_jsdoc = 1
 
 let g:prettier#autoformat = 1
 
-" coc config
+" -------------------------- coc_config
+
 "   Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
 "   Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)

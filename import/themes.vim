@@ -1,6 +1,6 @@
 "-------------------Theme----------------------
 set cursorline
-let g:airline_theme='supernova'		"airLine Theme
+let g:airline_theme='jellybeans'		"airLine Theme
 let g:airline_powerline_fonts = 3
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled=1

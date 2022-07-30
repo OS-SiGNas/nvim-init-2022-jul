@@ -25,6 +25,8 @@ set showmatch         			" Show matching braces
 "IDK configs
 set ruler
 let mapleader = " "
+nmap <silent> ,/ :noh<CR>
+
 " Requiere
 so ~/.config/nvim/import/plugins.vim
 so ~/.config/nvim/import/nerdtree.vim
