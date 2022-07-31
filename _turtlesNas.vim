@@ -84,17 +84,18 @@ let s:lightgrey   = { "gui": "#575b61", "cterm": "237" }
 let s:darkgrey    = { "gui": "#292B2E", "cterm": "239" }
 let s:warmgrey    = { "gui": "#5e5e5e", "cterm": "59" }
 
-let s:pink        = { "gui": "#B071BF", "cterm": "197" }
+let s:pink        = { "gui": "#ff171b", "cterm": "197" }
 let s:green       = { "gui": "#98D750", "cterm": "148" }
 let s:aqua        = { "gui": "#5E90C7", "cterm": "81" }
 let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }
 let s:orange      = { "gui": "#E1AD3D", "cterm": "208" }
 let s:purple      = { "gui": "#BE5A79", "cterm": "141" }
 let s:red         = { "gui": "#DD4641", "cterm": "196" }
+let s:scar        = { "gui": "#b672d3", "cterm": "196" }
 
 let s:addfg       = { "gui": "#d7ffaf", "cterm": "193" }
 let s:addbg       = { "gui": "#5f875f", "cterm": "65" }
-let s:delbg       = { "gui": "#f75f5f", "cterm": "167" }
+let s:delbg       = { "gui": "#8bdcff", "cterm": "167" } "strings
 let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
 let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
 
@@ -109,19 +110,20 @@ call s:h("CursorLine",    {                     "bg": s:lightblack2 })
 call s:h("NonText",       { "fg": s:lightgrey })
 call s:h("StatusLine",    { "fg": s:warmgrey,   "bg": s:black,        "format": "reverse" })
 call s:h("StatusLineNC",  { "fg": s:darkgrey,   "bg": s:warmgrey,     "format": "reverse" })
-call s:h("TabLine",       { "fg": s:white,      "bg": s:darkblack,    "format": "reverse" })
+call s:h("TabLine",       { "fg": s:red,      "bg": s:darkblack,    "format": "reverse" })
 call s:h("Visual",        {                     "bg": s:lightgrey })
-call s:h("Search",        { "fg": s:black,      "bg": s:green })
-call s:h("MatchParen",    { "fg": s:red,      "bg": s:lightblack})
+call s:h("Search",        { "fg": s:yellow,     "bg": s:warmgrey})
+call s:h("MatchParen",    { "fg": s:pink,        "bg": s:lightblack2})
 call s:h("Question",      { "fg": s:yellow })
 call s:h("ModeMsg",       { "fg": s:yellow })
 call s:h("MoreMsg",       { "fg": s:yellow })
 call s:h("ErrorMsg",      { "fg": s:black,      "bg": s:red,          "format": "standout" })
 call s:h("WarningMsg",    { "fg": s:red })
-call s:h("VertSplit",     { "fg": s:lightblack,      "bg": s:lightblack })
-call s:h("LineNr",        { "fg": s:lightgrey,       "bg": s:lightblack })
-call s:h("CursorLineNr",  { "fg": s:michelangelo,     "bg": s:lightblack })
-call s:h("SignColumn",    {                     "bg": s:lightblack })
+call s:h("VertSplit",     { "fg": s:lightblack,   "bg": s:lightblack })
+call s:h("LineNr",        { "fg": s:spacemacs_var,    "bg": s:lightblack })
+"call s:h("LineNr",        { "fg": s:lightgrey,    "bg": s:lightblack })
+call s:h("CursorLineNr",  { "fg": s:michelangelo, "bg": s:lightblack })
+call s:h("SignColumn",    {                       "bg": s:lightblack })
 
 " misc
 call s:h("SpecialKey",    { "fg": s:pink })
@@ -153,7 +155,7 @@ call s:h("Number",        { "fg": s:michelangelo })
 call s:h("Float",         { "fg": s:michelangelo })
 call s:h("Boolean",       { "fg": s:purple })
 call s:h("Character",     { "fg": s:yellow })
-call s:h("String",        { "fg": s:changefg})
+call s:h("String",        { "fg": s:delbg, "format": "italic"})
 
 call s:h("Type",          { "fg": s:tender_red })
 call s:h("Structure",     { "fg": s:aqua })
@@ -161,7 +163,7 @@ call s:h("StorageClass",  { "fg": s:aqua })
 call s:h("Typedef",       { "fg": s:aqua })
     
 call s:h("Identifier",    { "fg": s:green })
-call s:h("Function",      { "fg": s:green })
+call s:h("Function",      { "fg": s:scar, "format": "bold" })
                          
 call s:h("Statement",     { "fg": s:pink })
 call s:h("Operator",      { "fg": s:pink })
@@ -295,7 +297,7 @@ call s:h("pythonBuilinFunc",    { "fg": s:green })
 " Javascript
 call s:h("jsFuncName",          { "fg": s:green })
 call s:h("jsThis",              { "fg": s:pink })
-call s:h("jsFunctionKey",       { "fg": s:green })
+call s:h("jsFunctionKey",       { "fg": s:purple})
 call s:h("jsPrototype",         { "fg": s:aqua })
 call s:h("jsExceptions",        { "fg": s:aqua })
 call s:h("jsFutureKeys",        { "fg": s:aqua })
@@ -310,7 +312,7 @@ call s:h("jsDocTags",           { "fg": s:aqua,   "format": "italic" })
                                  
 " Html
 call s:h("htmlTag",             { "fg": s:white })
-call s:h("htmlEndTag",          { "fg": s:white })
+call s:h("htmlEndTag",          { "fg": s:red})
 call s:h("htmlTagName",         { "fg": s:pink })
 call s:h("htmlArg",             { "fg": s:green })
 call s:h("htmlSpecialChar",     { "fg": s:purple })
