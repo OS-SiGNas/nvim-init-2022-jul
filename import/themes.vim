@@ -6,8 +6,8 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled=1
 
  
-colorscheme turtles 
-"colorscheme welpe 
+colorscheme turtles " *******
+"colorscheme gruvbox
 "colorscheme vimbrant 
 "colorscheme vimicks 
 highlight Normal ctermbg=none guibg=none

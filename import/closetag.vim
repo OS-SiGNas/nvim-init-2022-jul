@@ -53,13 +53,18 @@ inoremap `; ``;<left><left>
 
 inoremap ( ()<left>
 inoremap (; ();<left><left>
+inoremap (: ():<left><left>
 
 inoremap [ []<left>
 inoremap [; [];<left><left>
 
 inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+inoremap {; {};<left><left>
+
+"inoremap {<CR> {<CR>}<ESC>O
+"inoremap {;<CR> {<CR>};<ESC>O
+
+
 "----------------------------------------------
 nnoremap <C-Left> :bp<CR>
 nnoremap <C-Right> :bn<CR>

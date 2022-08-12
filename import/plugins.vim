@@ -31,7 +31,7 @@ Plug 'nvie/vim-flake8'
 Plug 'pangloss/vim-javascript'			    " JavaScript es6
 Plug 'maxmellon/vim-jsx-pretty'   		  " JS and JSX syntax
 Plug 'leafgarland/typescript-vim' 		" TypeScript syntax
-"Plug 'peitalin/vim-jsx-typescript'
+Plug 'peitalin/vim-jsx-typescript'
 "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "Plug 'yuezk/vim-js'					          " JavaScript
 "Plug 'jelera/vim-javascript-syntax'    " JavaScript
