@@ -81,7 +81,7 @@ let s:lightblack2 = { "gui": "#272727", "cterm": "236" }
 let s:darkblack   = { "gui": "#211F1C", "cterm": "233" }
 let s:grey        = { "gui": "#2f2f2f", "cterm": "243" }
 let s:lightgrey   = { "gui": "#575b61", "cterm": "237" }
-let s:darkgrey    = { "gui": "#292B2E", "cterm": "239" }
+let s:darkgrey    = { "gui": "#373d41", "cterm": "239" }
 let s:warmgrey    = { "gui": "#5e5e5e", "cterm": "59" }
 
 let s:pink        = { "gui": "#ff171b", "cterm": "197" }
@@ -111,7 +111,7 @@ call s:h("NonText",       { "fg": s:lightgrey })
 call s:h("StatusLine",    { "fg": s:warmgrey,   "bg": s:black,        "format": "reverse" })
 call s:h("StatusLineNC",  { "fg": s:darkgrey,   "bg": s:warmgrey,     "format": "reverse" })
 call s:h("TabLine",       { "fg": s:red,      "bg": s:darkblack,    "format": "reverse" })
-call s:h("Visual",        {                     "bg": s:lightgrey })
+call s:h("Visual",        { "fg": s:black,    "bg": s:lightgrey })
 call s:h("Search",        { "fg": s:yellow,     "bg": s:warmgrey})
 call s:h("MatchParen",    { "fg": s:pink,        "bg": s:lightblack2})
 call s:h("Question",      { "fg": s:yellow })
@@ -142,8 +142,8 @@ call s:h("FoldColumn",    {                     "bg": s:darkblack })
 "        Incsearch"
 
 " popup menu
-call s:h("Pmenu",         { "fg": s:white,       "bg": s:lightblack })
-call s:h("PmenuSel",      { "fg": s:warmgrey,       "bg": s:black,        "format": "reverse,bold" })
+call s:h("Pmenu",         { "fg": s:aqua,      "bg": s:changefg})
+call s:h("PmenuSel",      { "fg": s:white,      "bg": s:black,        "format": "reverse,bold" })
 call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:grey })
 "        PmenuSbar"
 
@@ -155,7 +155,7 @@ call s:h("Number",        { "fg": s:michelangelo })
 call s:h("Float",         { "fg": s:michelangelo })
 call s:h("Boolean",       { "fg": s:purple })
 call s:h("Character",     { "fg": s:yellow })
-call s:h("String",        { "fg": s:delbg, "format": "italic"})
+call s:h("String",        { "fg": s:delbg})
 
 call s:h("Type",          { "fg": s:tender_red })
 call s:h("Structure",     { "fg": s:aqua })
@@ -188,7 +188,7 @@ call s:h("Tag",           { "fg": s:pink })
 "        Debug"
 
 call s:h("Todo",          { "fg": s:orange,   "format": "bold,italic" })
-call s:h("Comment",       { "fg": s:warmgrey, "format": "italic" })
+call s:h("Comment",       { "fg": s:darkgrey, "format": "italic" })
                          
 call s:h("Underlined",    { "fg": s:green })
 call s:h("Ignore",        {})
