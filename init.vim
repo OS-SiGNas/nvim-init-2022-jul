@@ -23,6 +23,13 @@ set splitright        			" Make vertical splits on the right
 set showcmd           			" Show the current command in the bottom right
 set showmatch         			" Show matching braces
 
+" Faster scrolling
+nnoremap <C-j> 10<C-e>
+nnoremap <C-k> 10<C-y>
+
+" run current file
+nnoremap <leader>x :!node %<cr>
+
 "IDK configs
 set ruler
 let mapleader = " "

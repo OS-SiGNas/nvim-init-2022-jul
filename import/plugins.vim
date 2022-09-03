@@ -51,39 +51,5 @@ let g:indentLine_color_gui = '#636363'
 let g:javascript_plugin_jsdoc = 1
 let g:prettier#autoformat = 1
 
-" -------------------------- coc_config
-"inoremap <silent><expr> <TAB>
-      "\ pumvisible() ? "\<C-n>" :
-      "\ <SID>check_back_space() ? "\<TAB>" :
-      "\ coc#refresh()
-"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-"function! s:check_back_space() abort
-  "let col = col('.') - 1
-  "return !col || getline('.')[col - 1]  =~# '\s'
-"endfunction
-
-" Coc
-"This expression seems to be responsible for coc formatting on enter
-inoremap <silent><expr> <cr> "\C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-"I this just says autocomplete with the first option if pop up menu is open.
-"If it is not open, just do a regular tab.
-inoremap <silent><expr> <TAB> pumvisible() ? coc#select_confirm() : "\<C-g>u\<TAB>"
-
 "   Coc Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
-vmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
-
-"   Coc Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implemenntation)
-nmap <silent> gr <Plug>(coc-references)
-
-" Faster scrolling
-nnoremap <C-j> 10<C-e>
-nnoremap <C-k> 10<C-y>
-
-" run current file
-nnoremap <leader>x :!node %<cr>
