@@ -5,7 +5,6 @@ let g:airline_powerline_fonts = 3
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled=1
 
- 
 colorscheme turtles " *******
 "colorscheme gruvbox
 "colorscheme vimbrant 

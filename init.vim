@@ -33,5 +33,6 @@ so ~/.config/nvim/import/plugins.vim
 so ~/.config/nvim/import/nerdtree.vim
 so ~/.config/nvim/import/themes.vim
 so ~/.config/nvim/import/closetag.vim
+so ~/.config/nvim/import/coc-config.vim
 "so ~/.config/nvim/import/prettier.vim
 
