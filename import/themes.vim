@@ -6,9 +6,13 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled=1
 
 colorscheme turtles " *******
+"colorscheme onedark
 "colorscheme gruvbox
 "colorscheme vimbrant 
 "colorscheme vimicks 
+"colorscheme smarties 
+"colorscheme ayu
+
 highlight Normal ctermbg=none guibg=none
 highlight SignColumn ctermbg=none guibg=none
 highlight LineNr ctermbg=none guibg=none
