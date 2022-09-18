@@ -77,8 +77,8 @@ let s:seafoam     = { "gui": "#4F99A1", "cterm": "101" }
 let s:white       = { "gui": "#B3B3B3", "cterm": "252" }
 let s:black       = { "gui": "#191919", "cterm": "234" }
 let s:lightblack  = { "gui": "#111111", "cterm": "235" }
-let s:lightblack2 = { "gui": "#272727", "cterm": "236" }
-let s:darkblack   = { "gui": "#211F1C", "cterm": "233" }
+let s:lightblack2 = { "gui": "#000000", "cterm": "236" }
+let s:darkblack   = { "gui": "#0c0d0e", "cterm": "233" }
 let s:grey        = { "gui": "#2f2f2f", "cterm": "243" }
 let s:lightgrey   = { "gui": "#575b61", "cterm": "237" }
 let s:darkgrey    = { "gui": "#373d41", "cterm": "239" }
@@ -98,6 +98,7 @@ let s:addbg       = { "gui": "#5f875f", "cterm": "65" }
 let s:delbg       = { "gui": "#8bdcff", "cterm": "167" } "strings
 let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
 let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
+let s:popmenubg   = { "gui": "#2b3033", "cterm": "60" }
 
 " Highlighting 
 " ------------
@@ -114,14 +115,14 @@ call s:h("TabLine",       { "fg": s:red,      "bg": s:darkblack,    "format": "r
 call s:h("Visual",        { "fg": s:black,    "bg": s:lightgrey })
 call s:h("Search",        { "fg": s:yellow,     "bg": s:warmgrey})
 call s:h("MatchParen",    { "fg": s:pink,        "bg": s:lightblack2})
-call s:h("Question",      { "fg": s:yellow })
-call s:h("ModeMsg",       { "fg": s:yellow })
-call s:h("MoreMsg",       { "fg": s:yellow })
-call s:h("ErrorMsg",      { "fg": s:black,      "bg": s:red,          "format": "standout" })
-call s:h("WarningMsg",    { "fg": s:red })
+call s:h("Question",      { "fg": s:donatello})
+call s:h("ModeMsg",       { "fg": s:black,        "bg": s:yellow})
+call s:h("MoreMsg",       { "fg": s:black,        "bg": s:yellow})
+call s:h("ErrorMsg",      { "fg": s:black,        "bg": s:red,          "format": "standout" })
+call s:h("WarningMsg",    { "fg": s:red,          "bg": s:black})
 call s:h("VertSplit",     { "fg": s:lightblack,   "bg": s:lightblack })
-call s:h("LineNr",        { "fg": s:spacemacs_var,    "bg": s:lightblack })
-"call s:h("LineNr",        { "fg": s:lightgrey,    "bg": s:lightblack })
+call s:h("LineNr",        { "fg": s:spacemacs_var,"bg": s:lightblack })
+"call s:h("LineNr",        { "fg": s:lightgrey,   "bg": s:lightblack })
 call s:h("CursorLineNr",  { "fg": s:michelangelo, "bg": s:lightblack })
 call s:h("SignColumn",    {                       "bg": s:lightblack })
 
@@ -142,9 +143,9 @@ call s:h("FoldColumn",    {                     "bg": s:darkblack })
 "        Incsearch"
 
 " popup menu
-call s:h("Pmenu",         { "fg": s:aqua,      "bg": s:changefg})
+call s:h("Pmenu",         { "fg": s:darkblack,      "bg": s:popmenubg})
 call s:h("PmenuSel",      { "fg": s:white,      "bg": s:black,        "format": "reverse,bold" })
-call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:grey })
+call s:h("PmenuThumb",    { "fg": s:lightblack, "bg": s:popmenubg})
 "        PmenuSbar"
 
 " Generic Syntax Highlighting
@@ -187,7 +188,7 @@ call s:h("SpecialComment",{ "fg": s:aqua })
 call s:h("Tag",           { "fg": s:pink })
 "        Debug"
 
-call s:h("Todo",          { "fg": s:orange,   "format": "bold,italic" })
+call s:h("Todo",          { "fg": s:black,   "format": "bold,italic" })
 call s:h("Comment",       { "fg": s:darkgrey, "format": "italic" })
                          
 call s:h("Underlined",    { "fg": s:green })
