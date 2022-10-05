@@ -87,10 +87,10 @@ let s:warmgrey    = { "gui": "#5e5e5e", "cterm": "59" }
 let s:pink        = { "gui": "#ff171b", "cterm": "197" }
 let s:green       = { "gui": "#98D750", "cterm": "148" }
 let s:aqua        = { "gui": "#5E90C7", "cterm": "81" }
-let s:yellow      = { "gui": "#E6DB74", "cterm": "186" }
+let s:yellow      = { "gui": "#cab900", "cterm": "186" }
 let s:orange      = { "gui": "#E1AD3D", "cterm": "208" }
 let s:purple      = { "gui": "#BE5A79", "cterm": "141" }
-let s:red         = { "gui": "#DD4641", "cterm": "196" }
+let s:red         = { "gui": "#ff1d21", "cterm": "196" }
 let s:scar        = { "gui": "#b672d3", "cterm": "196" }
 
 let s:addfg       = { "gui": "#d7ffaf", "cterm": "193" }
@@ -188,7 +188,7 @@ call s:h("SpecialComment",{ "fg": s:aqua })
 call s:h("Tag",           { "fg": s:pink })
 "        Debug"
 
-call s:h("Todo",          { "fg": s:black,   "format": "bold,italic" })
+call s:h("Todo",          { "fg": s:yellow,   "format": "bold,italic" })
 call s:h("Comment",       { "fg": s:darkgrey, "format": "italic" })
                          
 call s:h("Underlined",    { "fg": s:green })
@@ -303,7 +303,7 @@ call s:h("jsPrototype",         { "fg": s:aqua })
 call s:h("jsExceptions",        { "fg": s:aqua })
 call s:h("jsFutureKeys",        { "fg": s:aqua })
 call s:h("jsBuiltins",          { "fg": s:aqua })
-call s:h("jsArgsObj",           { "fg": s:aqua })
+call s:h("jsArgsObj",           { "fg": s:red})
 call s:h("jsStatic",            { "fg": s:aqua })
 call s:h("jsSuper",             { "fg": s:aqua })
 call s:h("jsFuncArgRest",       { "fg": s:purple, "format": "italic" })                                 

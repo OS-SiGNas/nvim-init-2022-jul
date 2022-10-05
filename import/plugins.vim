@@ -9,8 +9,10 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 Plug 'kkvh/vim-docker-tools'
+"Plug 'itchyny/vim-gitbranch'
 
 "themes
+Plug 'vim-airline/vim-airline-themes'	"airline
 Plug 'joshdick/onedark.vim'
 Plug 'jacoborus/tender.vim'
 Plug 'morhetz/gruvbox'
@@ -18,7 +20,6 @@ Plug 'sonph/onehalf'
 Plug 'flazz/vim-colorschemes'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'ryanoasis/vim-devicons'
-Plug 'vim-airline/vim-airline-themes'	"airline
 
 "Compatibilidad multiples lenguajes
 Plug 'vim-python/python-syntax'
@@ -27,10 +28,10 @@ Plug 'nvie/vim-flake8'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 "---> JavaScript
-Plug 'pangloss/vim-javascript'			    " JavaScript es6
-Plug 'maxmellon/vim-jsx-pretty'   		  " JS and JSX syntax
-Plug 'leafgarland/typescript-vim' 		" TypeScript syntax
-Plug 'peitalin/vim-jsx-typescript'
+"Plug 'pangloss/vim-javascript'			    " JavaScript es6
+"Plug 'maxmellon/vim-jsx-pretty'   		  " JS and JSX syntax
+"Plug 'leafgarland/typescript-vim' 		" TypeScript syntax
+"Plug 'peitalin/vim-jsx-typescript'
 "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 "Plug 'yuezk/vim-js'					          " JavaScript
 "Plug 'jelera/vim-javascript-syntax'    " JavaScript
