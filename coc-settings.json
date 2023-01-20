@@ -8,5 +8,7 @@
   ],
   "tsserver.formatOnType": true,
   "coc.preferences.formatOnType": true,
-  "eslint.packageManager": "yarn"
+  "eslint.packageManager": "yarn",
+  "diagnostic.messageTarget":"float",
+  "diagnostic.virtualText":true
 }

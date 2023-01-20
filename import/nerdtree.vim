@@ -1,5 +1,6 @@
 " Start NERDTree when Vim is started without file arguments.
 let NERDTreeShowHidden=1
+"let g:NERDTreeWinPos = "right"
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
 autocmd StdinReadPre * let s:std_in=1
@@ -8,7 +9,6 @@ noremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <F2> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>call
-
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 

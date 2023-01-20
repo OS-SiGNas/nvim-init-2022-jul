@@ -1,11 +1,8 @@
 "config
-filetype plugin on
-highlight Comment cterm=italic
-syntax on					" syntax highlighting
-filetype plugin indent on	" allow auto-indenting depending on file type
+
+set number
 set relativenumber			" add line numbers
 set termguicolors				" Colores hexadecimales
-set number
 set encoding=UTF-8
 set autoindent      " indent a new line the same amount as the line just typed
 set noswapfile			" disable creating swap file
@@ -16,12 +13,15 @@ set incsearch       " incremental search
 set nowrap					" WrapText
 set mouse=a					" enable mouse click
 set ttyfast     	  " Speed up scrolling in Vim
-
+set splitbelow			" Make horizontal splits below instead of above
+set splitright			" Make vertical splits on the right
+set showcmd   			" Show the current command in the bottom right
+set showmatch 			" Show matching braces
 set clipboard=unnamedplus 	" using system clipboard
-set splitbelow        			" Make horizontal splits below instead of above
-set splitright        			" Make vertical splits on the right
-set showcmd           			" Show the current command in the bottom right
-set showmatch         			" Show matching braces
+filetype plugin indent on	" allow auto-indenting depending on file type
+filetype plugin on
+highlight Comment cterm=italic
+syntax on					  " syntax highlighting
 
 " Faster scrolling
 nnoremap <C-j> 10<C-e>

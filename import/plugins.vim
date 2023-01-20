@@ -4,11 +4,13 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 Plug 'kkvh/vim-docker-tools'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "Plug 'itchyny/vim-gitbranch'
 
 "themes
@@ -29,7 +31,6 @@ Plug 'nvie/vim-flake8'
 
 "---> JavaScript
 "Plug 'pangloss/vim-javascript'			    " JavaScript es6
-"Plug 'maxmellon/vim-jsx-pretty'   		  " JS and JSX syntax
 "Plug 'leafgarland/typescript-vim' 		" TypeScript syntax
 "Plug 'peitalin/vim-jsx-typescript'
 "Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
