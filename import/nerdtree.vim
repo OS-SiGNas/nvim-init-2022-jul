@@ -1,6 +1,6 @@
 " Start NERDTree when Vim is started without file arguments.
 let NERDTreeShowHidden=1
-"let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "right"
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
 autocmd StdinReadPre * let s:std_in=1

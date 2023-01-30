@@ -1,14 +1,22 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "json"
+    ],
+    "tsserver.formatOnType": true,
+    "coc.preferences.formatOnType": true,
+    "eslint.filetypes": [
     "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "json"
+    "javascript.jsx",
+    "javascriptreact"
   ],
-  "tsserver.formatOnType": true,
-  "coc.preferences.formatOnType": true,
-  "eslint.packageManager": "yarn",
-  "diagnostic.messageTarget":"float",
-  "diagnostic.virtualText":true
+  "eslint.packageManager": "npm",
+  "diagnostic.messageTarget": "float",
 }
+  //"eslint.autoFix": false,
+  //"eslint.autoFixOnSave": true,
+  //"tslint.enable": true,
+  //"tslint.autoFixOnSave": true

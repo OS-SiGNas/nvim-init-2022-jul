@@ -40,6 +40,7 @@ Plug 'nvie/vim-flake8'
 "Autocomplete
 Plug 'alvan/vim-closetag'				" Autoclose tag for <tag></tag>
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
 ""Plug 'phpcomplete-extended'
 ""Plug 'm2mdas/phpcomplete-extended-laravel'
 
