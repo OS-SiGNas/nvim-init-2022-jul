@@ -23,6 +23,12 @@ filetype plugin on
 highlight Comment cterm=italic
 syntax on					  " syntax highlighting
 
+"Command
+command! Q q
+command! W w
+command! Wq wq
+command! X x
+
 " Faster scrolling
 nnoremap <C-j> 10<C-e>
 nnoremap <C-k> 10<C-y>
