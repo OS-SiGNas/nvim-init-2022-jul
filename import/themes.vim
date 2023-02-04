@@ -1,15 +1,11 @@
 "-------------------Theme----------------------
 set cursorline
-"let g:airline_theme='transparent'		"airLine Theme
-let g:airline_theme='transparent'		"airLine Theme
+let g:airline_theme='zenburn'		"airLine Theme
 let g:airline_powerline_fonts = 3
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#branch#enabled=1
 
-"colorscheme nas-tender
 colorscheme nas-tender
-"colorscheme nas-ayu
-"colorscheme nas
 
 highlight Normal ctermbg=none guibg=none
 highlight SignColumn ctermbg=none guibg=none

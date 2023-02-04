@@ -1,7 +1,7 @@
 "config
 
 set number
-"set relativenumber			" add line numbers
+set relativenumber			" add line numbers
 set termguicolors				" Colores hexadecimales
 set encoding=UTF-8
 set autoindent      " indent a new line the same amount as the line just typed
