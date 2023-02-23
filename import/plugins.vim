@@ -56,6 +56,7 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#636363'
 let g:javascript_plugin_jsdoc = 1
 let g:prettier#autoformat = 1
+let g:NERDSpaceDelims = 2
 
 "   Coc Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
