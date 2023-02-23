@@ -1,22 +1,28 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact",
-        "json"
-    ],
-    "tsserver.formatOnType": true,
-    "coc.preferences.formatOnType": true,
-    "eslint.filetypes": [
-    "javascript",
-    "javascript.jsx",
-    "javascriptreact"
-  ],
+  "coc.preferences.formatOnType": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "eslint.alwaysShowStatus": true,
   "eslint.packageManager": "npm",
   "diagnostic.messageTarget": "float",
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualText": true
 }
-  //"eslint.autoFix": false,
-  //"eslint.autoFixOnSave": true,
-  //"tslint.enable": true,
-  //"tslint.autoFixOnSave": true
+//"tsserver.formatOnType": true,
+//"eslint.autoFixOnSave": true,
+//"tslint.enable": true,
+//"tslint.autoFixOnSave": true,
+//"eslint.filetypes": [
+//"javascript",
+//"javascript.jsx",
+//"javascriptreact",
+//"typescript",
+//"typescript.tsx",
+//"typescriptreact"
+//],
+//"coc.preferences.formatOnSaveFiletypes": [
+//"javascript",
+//"javascriptreact",
+//"typescript",
+//"typescriptreact",
+//"json"
+//],

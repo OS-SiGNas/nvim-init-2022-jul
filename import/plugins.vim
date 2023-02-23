@@ -29,6 +29,9 @@ Plug 'sheerun/vim-polyglot'
 Plug 'nvie/vim-flake8'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
+"Golang
+"Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 "---> JavaScript
 "Plug 'pangloss/vim-javascript'			    " JavaScript es6
 "Plug 'leafgarland/typescript-vim' 		" TypeScript syntax

@@ -36,7 +36,7 @@ hi IncSearch guifg=#ffffff ctermfg=15 guibg=#000000 ctermbg=0 gui=Bold,reverse c
 hi LineNr guifg=#658e90 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi MatchParen guifg=#fff700 ctermfg=203 guibg=NONE ctermbg=NONE gui=Bold cterm=Bold
 hi NonText guifg=#444444 ctermfg=238 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi Normal guifg=#ffffec ctermfg=255 guibg=NONE ctermbg=235 gui=NONE cterm=NONE
+hi Normal guifg=#ffffff ctermfg=255 guibg=NONE ctermbg=235 gui=NONE cterm=NONE
 hi PMenu guifg=#dadada ctermfg=253 guibg=#00040d ctermbg=239 gui=NONE cterm=NONE
 hi PMenuSel guifg=#00040d ctermfg=239 guibg=#c9d05c ctermbg=185 gui=NONE cterm=NONE
 hi PmenuSbar guifg=#00040d ctermfg=239 guibg=#335261 ctermbg=239 gui=NONE cterm=NONE
@@ -60,7 +60,7 @@ hi WarningMsg guifg=#f43753 ctermfg=203 guibg=NONE ctermbg=NONE gui=NONE cterm=N
 hi WildMenu guifg=#282828 ctermfg=235 guibg=#c9d05c ctermbg=185 gui=Bold cterm=Bold
 hi Comment guifg=#494949 ctermfg=242 guibg=NONE ctermbg=NONE gui=italic cterm=NONE
 hi Constant guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
-hi String guifg=#ffb97b ctermfg=180 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
+hi String guifg=#ffb97b ctermfg=180 guibg=NONE ctermbg=NONE gui=italic cterm=NONE
 hi Character guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE
 hi Number guifg=#ffc24b ctermfg=215 guibg=NONE ctermbg=NONE gui=NONE cterm=NONE

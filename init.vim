@@ -36,6 +36,12 @@ nnoremap <C-k> 10<C-y>
 " run current file
 nnoremap <leader>x :!node %<cr>
 
+" Mapping HJKL
+inoremap <C-h> <left>
+inoremap <C-j> <down>
+inoremap <C-k> <up>
+inoremap <C-l> <right>
+
 "IDK configs
 set ruler
 let mapleader = " "
