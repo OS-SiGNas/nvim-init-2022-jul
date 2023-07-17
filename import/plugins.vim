@@ -10,7 +10,7 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 Plug 'kkvh/vim-docker-tools'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 "Plug 'itchyny/vim-gitbranch'
 
 "themes
